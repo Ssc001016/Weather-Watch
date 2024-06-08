@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">Weather Watch</div>
+    </header>
+    <section id="currentWeatherSection">
+        <form id="weather-form">
+            <div id="searchbar">
+                <label for="city">Enter city:</label>
+                <input type="text" id="city" name="city" required>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="metric" name="metric">
+                    Metric
+                </label>
+            </div>
+            <button class="button" type="submit">Get Weather</button>
+        </form>
+        <div id="weather-info"></div>
+        <div id="forecast-info"></div>
+    </section>
+    <section id="settingsSection">
+        <h2>Settings</h2>
+        <form id="settings-form">
+            <label for="temperature"><input type="checkbox" id="temperature" name="temperature"
+                    checked>Temperature</label>
+            <label for="wind"><input type="checkbox" id="wind" name="wind" checked>Wind</label>
+            <label for="pressure"><input type="checkbox" id="pressure" name="pressure" checked>Pressure</label>
+            <label for="humidity"><input type="checkbox" id="humidity" name="humidity" checked>Humidity</label>
+            <label for="cloud"><input type="checkbox" id="cloud" name="cloud" checked>Cloud Cover</label>
+            <label for="feelslike"><input type="checkbox" id="feelslike" name="feelslike" checked>Feels Like</label>
+            <label for="visibility"><input type="checkbox" id="visibility" name="visibility" checked>Visibility</label>
+            <label for="uv"><input type="checkbox" id="uv" name="uv" checked>UV Index</label>
+            <label for="gust"><input type="checkbox" id="gust" name="gust" checked>Gust Speed</label>
+
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
